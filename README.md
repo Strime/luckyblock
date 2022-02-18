@@ -22,7 +22,7 @@ The `bscscan` API is used to fetch lottery & royalties pool data.
 
 Following algorithm is used:
 
-`user_token` / `total_supply` * `royalties_pool`
+`user_token` / (`total_supply` - `lotterie_pool`) * (0,1 *`lotterie_pool`)
 
 `user_token` is filled by user on TextField, locally saved for better UX.
 `total_supply` value is 100,000,000,000.
